@@ -19,8 +19,13 @@ const getCurrentMonth = (date = new Date()) => {
   return months[currentMonth];
 };
 
+const isAdmin = () => {
+  return false;
+};
+
 try {
   document.getElementById("month").innerText = getCurrentMonth();
 } catch (err) {}
 
 exports.getCurrentMonth = getCurrentMonth;
+exports.isAdmin = isAdmin;
