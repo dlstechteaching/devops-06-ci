@@ -1,7 +1,4 @@
-const getCurrentMonth = (date = new Date()) => {
-  const currentMonth = date.getMonth();
-
-  const months = [
+const months = [
     "January",
     "February",
     "March",
@@ -15,6 +12,9 @@ const getCurrentMonth = (date = new Date()) => {
     "November",
     "December",
   ];
+  
+const getCurrentMonth = (date = new Date()) => {
+  const currentMonth = date.getMonth();
 
   return months[currentMonth];
 };
