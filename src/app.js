@@ -19,7 +19,10 @@ const getCurrentMonth = (date = new Date()) => {
   return months[currentMonth];
 };
 
-const isAdmin = () => {
+const isAdmin = (userId) => {
+  if (userId === "admin") {
+    return true;
+  }
   return false;
 };
 

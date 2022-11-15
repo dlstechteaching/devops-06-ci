@@ -13,4 +13,9 @@ describe("app tests suites - isAdmin", () => {
     const result = isAdmin();
     expect(result).toBe(false);
   });
+
+  test("should return true as user is admin", () => {
+    const result = isAdmin("admin");
+    expect(result).toBe(true);
+  });
 });
